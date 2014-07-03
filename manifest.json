@@ -1,0 +1,36 @@
+{
+	"name":"ComicHelper",
+	"description":"Watching comicbook without using mouse",
+	"version":"1.0",
+	
+	"manifest_version":2,
+	
+	"background":{
+		"scripts": ["jquery-1.10.2.js", "back.js"],
+		"persistent": true
+	},
+
+	"permissions":[
+		"cookies",
+		"http://140.116.103.37/*",
+		"http://stackoverflow.com/questions/*",
+		"http://comic.sfacg.com/HTML/HunterXHunter/*",
+		"alarms",
+		"storage",
+		"notifications",
+		"background",
+		"tabs"
+	],
+	"content_security_policy":"script-src 'self' 'unsafe-eval';object-src 'self'",
+	"browser_action":{
+		"default_icon":"b.png",
+		"default_title":"Hello"
+		
+	},
+	"content_scripts":[{
+		"matches":["http://stackoverflow.com/questions/*","http://comic.sfacg.com/HTML/HunterXHunter/*"],
+		"js":["jquery-1.10.2.js", "content.js"],
+		"run_at":"document_start",
+		"all_frames":true
+	}]
+}
