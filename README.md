@@ -5,15 +5,15 @@ Cooperated by bpotatog & chitsutote
 ###Installation:
 
 
-*Clone the repo
+1.Clone the repo
 
-Open Chrome browser
+2.Open Chrome browser
 
 Setting -> tools -> extensions-> enable Developer mode
 
 Load unpacked extention  -> select the "plugin" folder
 
-Enable and enjoy it
+3.Enable and enjoy it
 
 
 ###How to Use:
