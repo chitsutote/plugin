@@ -41,11 +41,20 @@ window.onload = function () {
 			
 			//Press N forward to next episode
 			}else if(event.keyCode ==78){
+				
+				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
+				var epi = document.URL.match(/\d+/);
+				var nextEp = parseInt(epi) + 1;
+
+				var nextUrl = url[0] + nextEp +"/";
+				
+				setTimeout(function(){window.location.href=nextUrl;},20);
 			
 			
 			}
 		}
-/*
+		
+		//Ctrl for next page  Shift for previous page
 		if(event.keyCode == 16 || event.keyCode == 17){
 			window.location.reload(true); 
 			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
@@ -68,7 +77,7 @@ window.onload = function () {
 					window.location.replace(reg[0]+temp); 
 				} 
 					window.location.reload(true); 
-		}*/
+		}
 	};
 			
 		
