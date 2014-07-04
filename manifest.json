@@ -1,7 +1,7 @@
 {
-	"name":"ComicHelper",
+	"name":"SFACG_helper",
 	"description":"Watching comicbook without using mouse",
-	"version":"1.0",
+	"version":"1.5",
 	
 	"manifest_version":2,
 	
@@ -12,8 +12,6 @@
 
 	"permissions":[
 		"cookies",
-		"http://140.116.103.37/*",
-		"http://stackoverflow.com/questions/*",
 		"http://comic.sfacg.com/HTML/HunterXHunter/*",
 		"alarms",
 		"storage",
@@ -28,7 +26,7 @@
 		
 	},
 	"content_scripts":[{
-		"matches":["http://stackoverflow.com/questions/*","http://comic.sfacg.com/HTML/HunterXHunter/*"],
+		"matches":["http://comic.sfacg.com/HTML/HunterXHunter/*"],
 		"js":["jquery-1.10.2.js", "content.js"],
 		"run_at":"document_start",
 		"all_frames":true
