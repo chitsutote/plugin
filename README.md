@@ -1,4 +1,4 @@
-##SFACGHelper   
+##SFACG Helper   
 
 Cooperated by bpotatog & chitsutote
 
