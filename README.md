@@ -1,6 +1,6 @@
-Comic Helper   Cooperated by bpotatog & chitsutote
+##SFACGHelper   Cooperated by bpotatog & chitsutote
 
-Installation:
+#Installation:
 
 
 1.Clone the repo
@@ -14,7 +14,7 @@ Load unpacked extention  -> select the "plugin" folder
 3.Enable and enjoy it
 
 
-How to Use:
+#How to Use:
 
 GO to comic.sfacg.com/HTML/HunterXHunter
 
