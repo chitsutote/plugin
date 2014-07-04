@@ -1,5 +1,5 @@
 {
-	"name":"SFACG_helper",
+	"name":"SFACG_Helper",
 	"description":"Watching comicbook without using mouse",
 	"version":"1.5",
 	
@@ -12,7 +12,7 @@
 
 	"permissions":[
 		"cookies",
-		"http://comic.sfacg.com/HTML/HunterXHunter/*",
+		"http://comic.sfacg.com/HTML/*",
 		"alarms",
 		"storage",
 		"notifications",
@@ -26,7 +26,7 @@
 		
 	},
 	"content_scripts":[{
-		"matches":["http://comic.sfacg.com/HTML/HunterXHunter/*"],
+		"matches":["http://comic.sfacg.com/HTML/*"],
 		"js":["jquery-1.10.2.js", "content.js"],
 		"run_at":"document_start",
 		"all_frames":true
