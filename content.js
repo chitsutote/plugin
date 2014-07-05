@@ -1,34 +1,33 @@
 
 //alert(document.URL);
 var oldonload = window.onload || function (){};
+
 window.onload = function () {
 	oldonload();
 	
 	
 	document.onkeydown = function(){
 	
-		//var comicName;
 		
 		if(event.keyCode == 79){
-			 comicName = prompt("Enter the Comic name:");
+			 comicName = prompt("Enter the comic name:");
 		}	
 
 		if(event.keyCode ==66 || event.keyCode == 78){
 			//Press B back to previous episode
 			if(event.keyCode == 66){
-
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
+				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
-				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
+//				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
 				var epi = document.URL.match(/\d+/);
 				var previousEp = parseInt(epi) - 1;
 				
 				if( previousEp < 100){
-					//var nextUrl = url[0] + "0" + previousEp +"/#p=1";
-					var nextUrl = url + "0" + previousEp +"/#p=1";
+					var nextUrl = url[0] + "0" + previousEp +"/#p=1";
+//					var nextUrl = url + "0" + previousEp +"/#p=1";
 				}else{
-					//var nextUrl = url[0] + previousEp + "/#p=1";
-					var nextUrl = url + previousEp + "/#p=1";
+					var nextUrl = url[0] + previousEp + "/#p=1";
+//					var nextUrl = url + previousEp + "/#p=1";
 				}
 				
 				setTimeout(function(){window.location.href=nextUrl;},20);
@@ -36,9 +35,10 @@ window.onload = function () {
 			//Press N forward to next episode
 			}else if(event.keyCode ==78){
 			
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
+				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
-				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
+
+//				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
 				var epi = document.URL.match(/\d+/);
 				var nextEp = parseInt(epi) + 1;
 
