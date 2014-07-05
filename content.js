@@ -52,13 +52,13 @@ window.onload = function () {
 			
 		
 			}
-
+				$(document).scrollTop(0);
 		}
 		//Ctrl for next page  Shift for previous page
 		if(event.keyCode == 16 || event.keyCode == 17){
 			window.location.reload(true); 
-//			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
-			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\/\d+\/#p=/i); 
+			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
+//			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\/\d+\/#p=/i); 
 
 			var cut_length = reg[0].length; 
 			
@@ -78,6 +78,7 @@ window.onload = function () {
 					window.location.replace(reg[0]+temp); 
 				} 
 					window.location.reload(true); 
+					$(document).scrollTop(0);
 		}
 	};
 			
