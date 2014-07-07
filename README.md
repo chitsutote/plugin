@@ -13,7 +13,7 @@ Cooperated by bpotatog & chitsutote
 
   *Setting -> tools -> extensions-> enable Developer mode 
 	
-  *Load unpacked extention  -> select the "plugin" folder
+  Load unpacked extention  -> select the "plugin" folder
 
 3.Enable and enjoy it
 ```
@@ -23,13 +23,13 @@ Cooperated by bpotatog & chitsutote
 ---------
 >Go to comic.sfacg.com and select which comic you want to read
 
-hotkey:
-
+>hotkey:
+```
 *N:   next episode
 *B:   previous episode
 *ctrl:   next page
 *shift:  previous page
-
+```
 ###Bug:
 ----------
 
