@@ -7,16 +7,26 @@ window.onload = function () {
 	
 	
 	document.onkeydown = function(){
-	
-		
+		/*
+		//Press O to enable the function	
 		if(event.keyCode == 79){
-			 comicName = prompt("Enter the comic name:");
+			alert(document.URL);
+			var start = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\//);
+			var end = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//);
+			alert(start);
+			alert(end);
+			comicName = document.URL.substring(start[0].length,end[0].length-1);
+			alert(comicName);
+			document.cookie="comicName="+comicName+";expire=";
 		}	
+		*/
+
 
 		if(event.keyCode ==66 || event.keyCode == 78){
 			//Press B back to previous episode
 			if(event.keyCode == 66){
-				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
+				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//i);
+//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
 //				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
 				var epi = document.URL.match(/\d+/);
@@ -35,10 +45,13 @@ window.onload = function () {
 			//Press N forward to next episode
 			}else if(event.keyCode ==78){
 			
-				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
+				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//i);
+
+
+//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
 
-//				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
+
 				var epi = document.URL.match(/\d+/);
 				var nextEp = parseInt(epi) + 1;
 
@@ -57,7 +70,10 @@ window.onload = function () {
 		//Ctrl for next page  Shift for previous page
 		if(event.keyCode == 16 || event.keyCode == 17){
 			window.location.reload(true); 
-			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
+			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+\/#p=/i); 
+
+
+//			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
 //			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\/\d+\/#p=/i); 
 
 			var cut_length = reg[0].length; 
