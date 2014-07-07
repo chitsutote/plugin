@@ -77,11 +77,18 @@ window.onload = function () {
 
 				var epi = document.URL.match(/\d+/);
 				var nextEp = parseInt(epi) + 1;
-
-				if( nextEp < 100){
-					var nextUrl = url[0] + "0" + nextEp +"/#p=1";
-				}else{
-					var nextUrl = url[0] + nextEp + "/#p=1";
+				if(choose == 1){
+					if( nextEp < 100){
+						var nextUrl = url[0] + "0" + nextEp +"/#p=1";
+					}else{
+						var nextUrl = url[0] + nextEp + "/#p=1";
+					}
+				}else if(choose ==2){
+					if( nextEp < 100){
+						var nextUrl = url[0] + "0" + nextEp +"j/#p=1";
+					}else{
+						var nextUrl = url[0] + nextEp + "j/#p=1";
+					}
 				}
 			
 				setTimeout(function(){window.location.href=nextUrl;},20);
