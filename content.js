@@ -21,21 +21,10 @@ window.onload = function () {
 		}
 	}
 	
+	var temp = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+j\/#p=/i);
+	alert(temp);
 	document.onkeydown = function(){
 		
-		/*
-		//Press O to enable the function	
-		if(event.keyCode == 79){
-			alert(document.URL);
-			var start = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\//);
-			var end = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//);
-			alert(start);
-			alert(end);
-			comicName = document.URL.substring(start[0].length,end[0].length-1);
-			alert(comicName);
-			document.cookie="comicName="+comicName+";expire=";
-		}	
-		*/
 
 
 		if(event.keyCode ==66 || event.keyCode == 78){
@@ -43,10 +32,9 @@ window.onload = function () {
 			if(event.keyCode == 66){
 				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//i);
 
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
 				
 				var epi = document.URL.match(/\d+/);
+				alert(epi);
 				var previousEp = parseInt(epi) - 1;
 				
 				if( previousEp < 100){
@@ -63,8 +51,6 @@ window.onload = function () {
 				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//i);
 
 
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
-//				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
 
 
 				var epi = document.URL.match(/\d+/);
@@ -88,8 +74,6 @@ window.onload = function () {
 			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+\/#p=/i); 
 
 
-//			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\/\d+\/#p=/i); 
-//			var reg = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\/\d+\/#p=/i); 
 
 			var cut_length = reg[0].length; 
 			
