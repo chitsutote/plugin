@@ -8,13 +8,9 @@ Cooperated by bpotatog & chitsutote
 
 ````
 1.Clone the repo
-
 2.Open Chrome browser
-
   *Setting -> tools -> extensions-> enable Developer mode 
-	
-  Load unpacked extention  -> select the "plugin" folder
-
+  *Load unpacked extention  -> select the "plugin" folder
 3.Enable and enjoy it
 ```
 
@@ -30,6 +26,7 @@ Cooperated by bpotatog & chitsutote
 *ctrl:   next page
 *shift:  previous page
 ```
+
 ###Bug:
 ----------
 
