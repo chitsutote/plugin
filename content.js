@@ -5,8 +5,24 @@ var oldonload = window.onload || function (){};
 window.onload = function () {
 	oldonload();
 	
+	var flag = 1;
+	var temp = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+\/#p=/i);
+	if( temp != null){
+			flag = 0;
+	}
+
+
+	if( flag == 1){
+		var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+\//i);
+		if( url !=null){
+			var reload = url[0]+"#p=1";
+			setTimeout(function(){window.location.href=reload;},5);
+			
+		}
+	}
 	
 	document.onkeydown = function(){
+		
 		/*
 		//Press O to enable the function	
 		if(event.keyCode == 79){
@@ -26,18 +42,17 @@ window.onload = function () {
 			//Press B back to previous episode
 			if(event.keyCode == 66){
 				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\//i);
+
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HunterXHunter\//i);
 //				var url = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/HZDLQ\//i);
-//				var url = "http://comic.sfacg.com/HTML/"+comicName+"/";
+				
 				var epi = document.URL.match(/\d+/);
 				var previousEp = parseInt(epi) - 1;
 				
 				if( previousEp < 100){
 					var nextUrl = url[0] + "0" + previousEp +"/#p=1";
-//					var nextUrl = url + "0" + previousEp +"/#p=1";
 				}else{
 					var nextUrl = url[0] + previousEp + "/#p=1";
-//					var nextUrl = url + previousEp + "/#p=1";
 				}
 				
 				setTimeout(function(){window.location.href=nextUrl;},20);
