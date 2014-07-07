@@ -21,8 +21,6 @@ window.onload = function () {
 		}
 	}
 	
-	var temp = document.URL.match(/http:\/\/comic.sfacg.com\/HTML\/\w+\/\d+j\/#p=/i);
-	alert(temp);
 	document.onkeydown = function(){
 		
 
@@ -34,7 +32,6 @@ window.onload = function () {
 
 				
 				var epi = document.URL.match(/\d+/);
-				alert(epi);
 				var previousEp = parseInt(epi) - 1;
 				
 				if( previousEp < 100){
