@@ -32,8 +32,7 @@ shift:  previous page
 ###Bug:
 ----------
 
->next/previous episode is not working when you choose any volume of the comic books
-
+>Cant detect episode and volume boundary 
 
 
 
