@@ -19,9 +19,18 @@ Load unpacked extention  -> select the "plugin" folder
 ###How to Use:
 
 ---------
-GO to comic.sfacg.com/HTML/HunterXHunter
+GO to comic.sfacg.com and select which comic you want to read
 
+hotkey:
 
+N:   next episode
+B:   previous episode
+ctrl:   next page
+shift:  previous page
+
+###Bug:
+
+next/previous episode is not working when you choose any volume of the comic books
 
 
 
