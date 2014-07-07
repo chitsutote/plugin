@@ -1,10 +1,10 @@
 ##SFACG Helper   
+-------
 
 Cooperated by bpotatog & chitsutote
 
 ###Installation:
-
-
+-------
 1.Clone the repo
 
 2.Open Chrome browser
@@ -17,7 +17,7 @@ Load unpacked extention  -> select the "plugin" folder
 
 
 ###How to Use:
-
+------
 GO to comic.sfacg.com/HTML/HunterXHunter
 
 
