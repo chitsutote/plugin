@@ -7,7 +7,7 @@ Cooperated by bpotatog & chitsutote
 --------------
 
 ````
-1.Clone the repo
+1.Clone the repo  or  Click Download ZIP on right side
 
 2.Open Chrome browser
   Setting -> tools -> extensions-> enable Developer mode 
@@ -25,8 +25,8 @@ Cooperated by bpotatog & chitsutote
 ```
 N:   next episode
 B:   previous episode
-ctrl:   next page
-shift:  previous page
+Ctrl:   next page
+Shift:  previous page
 ```
 
 ###Bug:
